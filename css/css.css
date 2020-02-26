@@ -3,6 +3,10 @@ body{
     font-family: 'Barlow', sans-serif;
 
 }
+body a {
+    text-decoration:none;
+    color: black;
+}
 header {
    height: 11vh;
    display: flex;
@@ -16,7 +20,6 @@ header img {
 #meny {
     background-color: black;
     height: 4vh;
-    padding: 1px;
     display: flex;
     justify-content: space-around;
     margin-top: auto;
@@ -31,7 +34,8 @@ nav a {
 }
 
 #kategorier {
-    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #dropdown-content {
@@ -39,13 +43,14 @@ nav a {
 }
 
 #dropdown-content.active {
-    display: block;
-    background-color: black;
+    display: flex;
+    background-color: rgb(182, 193, 231);
     height: 4vh;
+    justify-content: space-around;
 }
 
 #dropdown-content a {
-    color: white;
+   color: black;
 }
 
 #start {
@@ -80,6 +85,11 @@ footer {
     
 }
 
+footer img {
+    height: 4vh;
+}
+
+
 #footer {
     height: 4vh; 
     padding: 6px;
@@ -87,11 +97,31 @@ footer {
    
 }
 
-footer a {
+#planering {
     float: left;
     color: white;
     margin-top: 12px;
     margin-left: 4px;
+}
+
+#justden {
+    overflow: hidden;
+        display: grid;
+        grid-template-areas: 
+        "bye ly"
+        "ary ary";
+}
+#yeezus {
+    grid-area: bye;
+    padding: 3px;
+}
+#yeezus1 {
+    grid-area: ly;
+    padding: 3px;
+}
+#yeezustext {
+    grid-area: ary;
+    padding: 3px;
 }
 
 @media screen and (min-width: 600px) {
