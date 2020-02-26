@@ -1,5 +1,5 @@
 document.getElementById('kategorier').addEventListener('click', function () {
-    toggleClass(document.getElementById('kat'), "active")
+    toggleClass(document.getElementById('dropdown-content'), "active")
 });
 
 
