@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    font-family: 'Barlow', sans-serif;
+
 }
 header {
    height: 11vh;
@@ -25,26 +27,26 @@ nav a {
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
+    vertical-align: middle;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
+
+#kategorier {
+    vertical-align: middle;
+}
+
+#dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #0f0d0d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    padding: 5px;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+#dropdown-content.active {
     display: block;
-  }
+    background-color: black;
+    height: 4vh;
+}
+
+#dropdown-content a {
+    color: white;
+}
 
 #start {
     width: 100vw;
@@ -57,12 +59,16 @@ img {
     margin-right: auto;
 }
 
-h3{
+h3, h2{
     text-align: center;
 }
 section {
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6 {
+    height: 200px;
 }
 
 footer {
@@ -123,6 +129,32 @@ footer a {
         grid-area: ar3;
         padding: 3px;
     }
+
+    #b4 {
+        grid-area: ar1;
+        padding: 3px;
+        align-self: center;
+    }
+
+    #a4 {
+        grid-area: bi1;
+        padding: 3px;
+    }
+    #b5 {
+        grid-area: ar2;
+        padding: 3px;
+    }
+    #a5 {
+        grid-area: bi2;
+        padding: 3px;
+    }
+    #b6 {
+        grid-area: ar3;
+        padding: 3px;
+    }
+    #a6 {
+        grid-area: bi3;
+        padding: 3px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -158,4 +190,35 @@ footer a {
         grid-area: ar3;
         padding: 3px;
     }
+
+    #b4 {
+        grid-area: bi1;
+        padding: 4px;
+        align-self: center;
+    }
+    #a4 {
+        grid-area: ar1;
+        padding: 4px;
+    }
+    #b5 {
+        grid-area: bi2;
+        padding: 3px;
+    }
+    #a5 {
+        grid-area: ar2;
+        padding: 3px;
+    }
+    #b6 {
+        grid-area: bi3;
+        padding: 4px;
+    }
+    #a6 {
+        grid-area: ar3;
+        padding: 4px;
+    }
+}
+
+#omoss {
+    background-image: url(../img/bergstopp-tapet-3072x576-1736_124.jpg);
+    height: 40vh;
 }
