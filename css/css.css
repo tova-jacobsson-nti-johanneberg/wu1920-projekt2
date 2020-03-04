@@ -108,20 +108,65 @@ footer img {
     overflow: hidden;
         display: grid;
         grid-template-areas: 
-        "bye ly"
-        "ary ary";
+        "ly ary2";
+    padding: 10px;
 }
 #yeezus {
-    grid-area: bye;
+    grid-area: ary2;
     padding: 3px;
+    height: 200px;
 }
 #yeezus1 {
     grid-area: ly;
-    padding: 3px;
+    padding: 10px;
 }
 #yeezustext {
-    grid-area: ary;
-    padding: 3px;
+    padding: 10px;
+}
+#embeded1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    
+}
+#klicka {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+#omtovatopp {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 60% 40%;
+    
+}
+
+#omtext {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+}
+
+#ombild {
+    grid-column-start: 2;
+    width: 500px;
+    padding: 10px;
+    
+}
+
+#omsocial {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+#omsocial img {
+    height: 5vh;
+    padding: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -185,6 +230,7 @@ footer img {
     #a6 {
         grid-area: bi3;
         padding: 3px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -246,9 +292,4 @@ footer img {
         grid-area: ar3;
         padding: 4px;
     }
-}
-
-#omoss {
-    background-image: url(../img/bergstopp-tapet-3072x576-1736_124.jpg);
-    height: 40vh;
 }
