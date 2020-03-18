@@ -2,6 +2,18 @@ document.getElementById('kategorier').addEventListener('click', function () {
     toggleClass(document.getElementById('dropdown-content'), "active")
 });
 
+document.getElementById('skicka').addEventListener('click', function () {
+    toggleClass(document.getElementById('tack'), "active")
+});
+
+document.getElementById('skicka').addEventListener('click', function () {
+    toggleClass(document.getElementById('tips'), "active")
+});
+
+document.getElementById('skicka').addEventListener('click', function () {
+    toggleClass(document.getElementById('skicka'), "active")
+});
+
 
 
 /**
