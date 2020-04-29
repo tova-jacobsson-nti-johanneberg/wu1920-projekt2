@@ -21,6 +21,10 @@
         img {
             width: 500px;
         }
+        
+        video {
+            width: 300px;
+        }
     </style>
 
 </head>
@@ -195,12 +199,21 @@
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
     Det mesta fungerade bra i andra webbläsare. Allt såg likadant ut i både chrome, firefox och edge. Några fonter såg lite annorlunda ut med det var inget anmärkningsvärt. Dock var det en del i min js kod som inte fungerade i egde. Det fungerar i både chrome och firefox men inte edge. Efter som det inte var så stor grej så valde jag att inte ändra det just nu. 
+    <br><video controls autoplay src="RPReplay_Final1587544536.MP4"></video> 
+    <video controls autoplay src="RPReplay_Final1587545099.MP4"></video>
+    <img src="Skärmklipp.PNG" alt="">
+   
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
     Det gick bättre än vad jag trodde att jobba såhär självständigt. Jag tyckte att det var väldigt roligt att vi fick välja våra projekt själva och det blev därför mycket roligare att fortsätta jobba på det t.ex. hemma. Nu i efterhand känns det som att jag kanske hade velat lägga mer tid på kvalitet i detaljerna istället för kvantitet av innehållet. Jag skulle kanske arbeta mer med designen så att layouten blir snyggare. Det var i och för sig ganska svårt att få hjälp under detta projekt, vilket jag förstår eftersom vi är så många i klassen men det mesta löste sig då man kunde fråga varandra och googla. Tyckte även det var lite oklart vad som var krav på att ha med så jag ber om ursäkt om jag missade någonting, fråga gärna mig i så fall så kanske jag kan komplettera med det. 
 
-</body>
+
+    <br>
+    NYTT: 
+    Jag skrev under testningen att mitt js inte fungerade i edge men felet låg i css:en. Jag upptäckte att det var opacity: 0; som inte fungerade i varken edge eller internet explorer. Jag researchade lite och hittade att det tydligen är ett känt fel, erkänt fel av microsoft att de webbläsarna inte kan ta den strängen av kod. Jag googlade mig då fram till att det fanns en äldre funktion som gjorde samma sak som heter alpha filter. När jag la till lite sådana rader kod iställlet fungerade sidan sen precis som jag ville. 
+
+    Det har varit väldigt lärorikt att sitta med ett stort projekt på det här sätt där man fick arbeta mycket själv och man fick lära sig hur man ska hantera problem som kan uppstå påvägen. Jag skulle nog säga att det är det viktigaste jag tar med mig ur detta projekt, hur man gör när man träffar på problem. Det känns viktigt att veta hur man ska googla för att hitta de rätta svaren och det känns som att det finns en härlig community som anstränger sig för hjälpa andra och lära andra det de vet. Såklart tar jag även med mig mycket om själva koden. Jag har lärt mig otroligt många begrepp och fått en djupare förståelse av hur en större sida med många undersidor är uppbyggd. Jag tror att det har varit bra för mig att arbeta själv i detta projekt. Jag var inte alls säker på kod och frågade ofta efter hjälp men efter detta projekt så känner jag mig mycket självsäkrare på det jag gör och kan lösa de flesta av mina motgångar själv. 
 
 </html>
