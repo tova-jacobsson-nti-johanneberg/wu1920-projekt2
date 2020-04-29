@@ -94,18 +94,20 @@ footer {
 	height: 6vh;
 	position: fixed;
 	bottom: 0;
-	width: 99vw;
+	width: 100vw;
 }
 
 footer img {
 	height: 4vh;
 }
 
-#footer {
+footer a {
 	height: 4vh;
 	padding: 6px;
 	float: right;
+	margin-right: 20px;
 }
+
 
 #planering {
 	float: left;
@@ -268,12 +270,17 @@ footer img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	opacity: 0%;
+	opacity: 0;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=0);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
 	font-size: 3vh;
 }
 
 #tack.active {
 	opacity: 100%;
+	opacity: 1;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=100);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
 }
 
 #tips.active {
