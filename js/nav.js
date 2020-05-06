@@ -1,18 +1,19 @@
-document.getElementById('kategorier').addEventListener('click', function () {
-    toggleClass(document.getElementById('dropdown-content'), "active")
+document.querySelector('#kategorier').addEventListener('click', function () {
+    document.querySelector('#dropdown-content').classList.toggle('active');
 });
 
-document.getElementById('skicka').addEventListener('click', function () {
-    toggleClass(document.getElementById('tack'), "active")
+document.querySelector('#skicka').addEventListener('click', function () {
+    document.querySelector('#tack').classList.toggle('active');
 });
 
-document.getElementById('skicka').addEventListener('click', function () {
-    toggleClass(document.getElementById('tips'), "active")
+document.querySelector('#skicka').addEventListener('click', function () {
+    document.querySelector('#tips').classList.toggle('active');
 });
 
-document.getElementById('skicka').addEventListener('click', function () {
-    toggleClass(document.getElementById('skicka'), "active")
+document.querySelector('#skicka').addEventListener('click', function () {
+    document.querySelector('#skicka').classList.toggle('active');
 });
+
 
 
 
